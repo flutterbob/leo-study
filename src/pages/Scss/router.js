@@ -21,11 +21,8 @@ export default new Router({
             }
         },
         {
-            path: '/scssSt',
-            component: import('@/pages/Scss/components/ScssSt')
-            // beforeEnter() {
-            //     window.location = 'scssSt.html'
-            // }
+            path: '/scssSt.html',
+            component: () => import('@/pages/Scss/components/ScssSt.vue')
         }
     ]
 })

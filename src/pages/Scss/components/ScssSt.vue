@@ -1,12 +1,5 @@
 <template>
-  <div class="scss">
-    <label for>This is Scss Page</label>
+  <div class="scssSt">
+    <label for>This is for Scss Study</label>
   </div>
 </template>
-
-<script>
-export default {};
-</script>
-
-<style>
-</style>
