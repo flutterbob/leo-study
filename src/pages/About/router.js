@@ -17,6 +17,12 @@ export default new Router({
     {
       path: '/about.html',
       component: About
+    },
+    {
+      path: '/scssSt',
+      beforeEnter() {
+        window.location = '/scssSt.html'
+      }
     }
   ]
 })

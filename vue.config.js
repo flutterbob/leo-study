@@ -12,6 +12,12 @@ module.exports = {
             template: 'public/index.html',
             filename: 'about.html',
             title: 'About Page'
+        },
+        scssSt: {
+            entry: 'src/pages/Scss/main.js',
+            template: 'public/index.html',
+            filename: 'scssSt.html',
+            title: 'Scss Page'
         }
     }
 }

@@ -18,6 +18,12 @@ export default new Router({
       beforeEnter() {
         window.location = '/about.html'
       }
+    },
+    {
+      path: '/scssSt',
+      beforeEnter() {
+        window.location = '/scssSt.html'
+      }
     }
     // {
     //   path: '/about',
