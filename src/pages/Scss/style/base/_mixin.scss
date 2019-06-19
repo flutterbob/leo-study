@@ -3,3 +3,10 @@
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
+
+@mixin link-colors($normal, $hover: $normal) {
+  color: $normal;
+  &:hover {
+    color: $hover;
+  }
+}

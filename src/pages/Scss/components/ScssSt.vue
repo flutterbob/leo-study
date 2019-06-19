@@ -31,6 +31,10 @@
     <div class="blue-theme">
       <aside>This is blue theme!</aside>
     </div>
+
+    <div class="mixinParams">
+      <a href="#">Happy</a>
+    </div>
   </div>
 </template>
 
@@ -84,5 +88,11 @@ $test_blue: green;
 
 .blue-theme {
   @import "../style/bluetheme.scss";
+}
+
+.mixinParams {
+  a {
+    @include link-colors(blue);
+  }
 }
 </style>
