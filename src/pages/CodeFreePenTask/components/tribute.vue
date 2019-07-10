@@ -87,6 +87,7 @@ p {
 
 #tribute-items {
   text-align: left;
-  margin: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 </style>
