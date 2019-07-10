@@ -18,6 +18,12 @@ module.exports = {
             template: 'public/index.html',
             filename: 'scssSt.html',
             title: 'Scss Page'
+        },
+        tribute: {
+            entry: 'src/pages/CodeFreePenTask/main.js',
+            template: 'src/pages/CodeFreePenTask/codetask.html',
+            filename: 'tribute.html',
+            title: 'Tribute Page'
         }
     }
 }

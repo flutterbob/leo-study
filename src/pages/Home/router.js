@@ -24,6 +24,18 @@ export default new Router({
       beforeEnter() {
         window.location = '/scssSt.html'
       }
+    },
+    {
+      path: '/tribute',
+      beforeEnter() {
+        window.location = '/tribute.html'
+      }
+    },
+    {
+      path: '/survey',
+      beforeEnter() {
+        window.location = '/survey.html'
+      }
     }
     // {
     //   path: '/about',
