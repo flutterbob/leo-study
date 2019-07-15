@@ -20,10 +20,16 @@ module.exports = {
             title: 'Scss Page'
         },
         tribute: {
-            entry: 'src/pages/CodeFreePenTask/main.js',
-            template: 'src/pages/CodeFreePenTask/codetask.html',
+            entry: 'src/pages/Tribute/main.js',
+            template: 'src/pages/Tribute/tribute.html',
             filename: 'tribute.html',
             title: 'Tribute Page'
+        },
+        survey: {
+            entry: 'src/pages/Survey/main.js',
+            template: 'src/pages/Survey/codetask.html',
+            filename: 'survey.html',
+            title: 'Survey Page'
         }
     }
 }

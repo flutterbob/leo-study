@@ -1,5 +1,7 @@
 <template>
-  <div id="survey"></div>
+  <div id="app">
+    <router-view />
+  </div>
 </template>
 
 <script>
