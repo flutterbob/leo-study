@@ -5,7 +5,6 @@ module.exports = {
             template: 'public/index.html',
             filename: 'index.html',
             title: 'Index Page',
-
         },
         about: {
             entry: 'src/pages/About/main.js',
@@ -27,9 +26,15 @@ module.exports = {
         },
         survey: {
             entry: 'src/pages/Survey/main.js',
-            template: 'src/pages/Survey/codetask.html',
+            template: 'src/pages/Survey/survey.html',
             filename: 'survey.html',
             title: 'Survey Page'
+        },
+        product: {
+            entry: 'src/pages/Product/main.js',
+            template: 'src/pages/Product/product.html',
+            filename: 'product.html',
+            title: 'Product Page'
         }
     }
 }

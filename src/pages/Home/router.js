@@ -36,6 +36,11 @@ export default new Router({
       beforeEnter() {
         window.location = '/survey.html'
       }
+    }, {
+      path: '/product',
+      beforeEnter() {
+        window.location = '/product.html'
+      }
     }
     // {
     //   path: '/about',
