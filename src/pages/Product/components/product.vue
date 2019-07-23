@@ -2,11 +2,12 @@
   <div id="product">
     <main id="main">
       <header id="header">
+        <div class="brand" id="b"></div>
         <nav id="nav-bar">
           <ul>
-            <li class="nav-link"></li>
-            <li class="nav-link"></li>
-            <li class="nav-link"></li>
+            <li class="nav-link">Features</li>
+            <li class="nav-link">How It Works</li>
+            <li class="nav-link">Pricing</li>
           </ul>
         </nav>
       </header>
@@ -50,15 +51,52 @@ export default {};
 </script>
 
 <style>
+body {
+  margin: 0;
+}
+
 header {
+  width: 100%;
+  height: 75px;
   background: #ffffff;
   position: sticky;
   top: 0px;
+  display: inline-block;
+  background: yellow;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  margin-right: 40px;
+  float: right;
+  align-content: center;
+  height: 100%;
+}
+
+nav ul {
+  margin: auto;
+  padding: auto;
+  height: 100%;
+}
+
+.nav-link {
+  padding-right: 10px;
+  padding-left: 10px;
+  float: left;
+  text-align: center;
+  line-height: 75px;
+}
+
+.nav-link:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 520px) {
   header {
-    background: #000;
+    background: blue;
   }
 }
 </style>
