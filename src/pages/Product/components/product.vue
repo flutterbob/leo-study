@@ -2,7 +2,9 @@
   <div id="product">
     <main id="main">
       <header id="header">
-        <div class="brand" id="b"></div>
+        <div class="brand" id="brand">
+          <img src="@/assets/Brand.png" alt="brand" />
+        </div>
         <nav id="nav-bar">
           <ul>
             <li class="nav-link">Features</li>
@@ -61,8 +63,23 @@ header {
   background: #ffffff;
   position: sticky;
   top: 0px;
-  display: inline-block;
-  background: yellow;
+}
+
+.brand {
+  height: 100%;
+  width: 200px;
+  float: left;
+  text-align: center;
+  line-height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand img {
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
 
 ul {
@@ -92,6 +109,10 @@ nav ul {
 
 .nav-link:hover {
   cursor: pointer;
+}
+
+#content {
+  text-align: center;
 }
 
 @media screen and (max-width: 520px) {
