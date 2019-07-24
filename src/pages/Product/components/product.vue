@@ -51,9 +51,55 @@
           </div>
         </section>
         <section id="howitwork-section">
-          <video src="https://www.youtube.com/watch?v=HaeYXG92J4E" id="video">Video</video>
+          <iframe width="560px" height="315px" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
         </section>
-        <section id="price-section"></section>
+        <section id="price-section">
+          <div class="price-item">
+            <div class="price-item-header">
+              <h3>TENOR TROMBONE</h3>
+            </div>
+            <div class="price-item-content">
+              <h2>$600</h2>
+              <ul>
+                <li>Leo</li>
+                <li>Flutter</li>
+                <li>Yi</li>
+                <li>Zheng</li>
+              </ul>
+              <button>SELECT</button>
+            </div>
+          </div>
+          <div class="price-item">
+            <div class="price-item-header">
+              <h3>VALITE TROMBONE</h3>
+            </div>
+            <div class="price-item-content">
+              <h2>$900</h2>
+              <ul>
+                <li>Leo</li>
+                <li>Flutter</li>
+                <li>Yi</li>
+                <li>Zheng</li>
+              </ul>
+              <button>SELECT</button>
+            </div>
+          </div>
+          <div class="price-item">
+            <div class="price-item-header">
+              <h3>BASS TROMBONE</h3>
+            </div>
+            <div class="price-item-content">
+              <h2>$1200</h2>
+              <ul>
+                <li>Leo</li>
+                <li>Flutter</li>
+                <li>Yi</li>
+                <li>Zheng</li>
+              </ul>
+              <button>SELECT</button>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
   </div>
@@ -157,8 +203,8 @@ nav ul {
 }
 
 .feature-item .item-icon {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,6 +235,60 @@ nav ul {
 
 .feature-item .item-content p {
   text-align: justify;
+}
+
+#howitwork-section {
+  padding: 50px 50px 20px 50px;
+}
+
+iframe {
+  border: none;
+}
+
+#price-section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.price-item {
+  background-color: #eeeeee;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 300px;
+  flex-basis: 300px;
+  margin: 0px 5px 0px 5px;
+  border: 1px solid #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price-item .price-item-header {
+  background: #ddd;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.price-item ul {
+  padding: 0;
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.price-item button {
+  background: #f1c40f;
+  height: 35px;
+  width: 100px;
+  margin-top: 15px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: none;
+  font-weight: bold;
+  font-size: 1.3em;
 }
 
 @media screen and (max-width: 520px) {
