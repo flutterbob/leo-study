@@ -7,17 +7,23 @@
         </div>
         <nav id="nav-bar">
           <ul>
-            <li class="nav-link">Features</li>
-            <li class="nav-link">How It Works</li>
-            <li class="nav-link">Pricing</li>
+            <li class="nav-link">
+              <a href="#features-section">Features</a>
+            </li>
+            <li class="nav-link">
+              <a href="#howitwork-section">How It Works</a>
+            </li>
+            <li class="nav-link">
+              <a href="#price-section">Pricing</a>
+            </li>
           </ul>
         </nav>
       </header>
       <div id="content">
         <section id="form-section">
           <h2>Handcrafted, home-made masterpieces</h2>
-          <form action id="form">
-            <input type="email" name="email" id="email" placeholder=" Enter your email address" />
+          <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <input type="email" name="email" id="email" placeholder="Enter your email address" />
             <input type="submit" value="GET STARTED" id="submit" />
           </form>
         </section>
@@ -171,8 +177,17 @@ nav ul {
   width: 40vw;
 }
 
+nav ul .nav-link a {
+  text-decoration: none;
+  color: #1c1c1c;
+}
+
 nav ul .nav-link:hover {
   cursor: pointer;
+}
+
+#email {
+  padding: 5px;
 }
 
 #content {
