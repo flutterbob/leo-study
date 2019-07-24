@@ -101,6 +101,20 @@
           </div>
         </section>
       </div>
+      <footer id="footer">
+        <ul>
+          <li>
+            <a href="#">Privacy</a>
+          </li>
+          <li>
+            <a href="#">Terms</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        <span>Copyright 2019, Chinese University of Hongkong</span>
+      </footer>
     </main>
   </div>
 </template>
@@ -289,6 +303,36 @@ iframe {
   border: none;
   font-weight: bold;
   font-size: 1.3em;
+}
+
+footer {
+  background: #ddd;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 30px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #1f1f1f;
+  font-size: 1.1em;
+}
+
+footer span {
+  padding-top: 5px;
+  font-size: 1.1em;
+  color: #5b5b5b;
 }
 
 @media screen and (max-width: 520px) {
