@@ -35,6 +35,12 @@ module.exports = {
             template: 'src/pages/Product/product.html',
             filename: 'product.html',
             title: 'Product Page'
+        },
+        technical: {
+            entry: 'src/pages/Technical/main.js',
+            template: 'src/pages/Technical/technical.html',
+            filename: 'technical.html',
+            title: 'Technical Document Page'
         }
     }
 }
