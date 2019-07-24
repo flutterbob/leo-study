@@ -151,18 +151,12 @@ nav ul {
   border-style: none;
 }
 
-#features-section {
-  background-color: green;
-}
-
 .feature-item {
-  background: #f1c40f;
   display: flex;
   padding: 5px 50px 5px 50px;
 }
 
 .feature-item .item-icon {
-  background: blue;
   width: 200px;
   height: 200px;
   display: flex;
@@ -171,6 +165,7 @@ nav ul {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  flex-shrink: 0;
 }
 
 .feature-item .item-icon img {
@@ -180,8 +175,22 @@ nav ul {
 }
 
 .feature-item .item-content {
-  background: chocolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding-left: 5px;
+  text-align: left;
 }
+
+.feature-item .item-content * {
+  margin: 0;
+}
+
+.feature-item .item-content p {
+  text-align: justify;
+}
+
 @media screen and (max-width: 520px) {
   header {
     background: blue;
