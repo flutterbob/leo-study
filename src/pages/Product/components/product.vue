@@ -51,7 +51,7 @@
           </div>
         </section>
         <section id="howitwork-section">
-          <iframe width="560px" height="315px" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+          <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
         </section>
         <section id="price-section">
           <div class="price-item">
@@ -245,6 +245,13 @@ nav ul .nav-link:hover {
 
 #howitwork-section {
   padding: 50px 50px 20px 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#howitwork-section iframe {
+  width: 560px;
+  height: 315px;
 }
 
 iframe {
@@ -282,6 +289,7 @@ iframe {
   padding: 0;
   margin: 0;
   font-size: 1.1em;
+  list-style-type: none;
 }
 
 .price-item button {
@@ -307,6 +315,7 @@ footer {
 }
 
 footer ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -356,6 +365,12 @@ footer span {
   #price-section .price-item {
     width: 320px;
     margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #howitwork-section iframe {
+    height: 200px;
   }
 }
 </style>
