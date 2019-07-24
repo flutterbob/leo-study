@@ -3,27 +3,27 @@
     <nav id="nav-doc">
       <header>
         <h1>JS Document</h1>
-        <ul>
-          <li>
-            <a href="#Introduce" class="nav-link">Introduce</a>
-          </li>
-          <li>
-            <a href="#What_you_should_already_know" class="nav-link">What you should already know</a>
-          </li>
-          <li>
-            <a href="#JavaScript_and_Java" class="nav-link">JavaScript and Java.</a>
-          </li>
-          <li>
-            <a href="#Hello_world" class="nav-link">Hello world</a>
-          </li>
-          <li>
-            <a href="#Variables" class="nav-link">Variables</a>
-          </li>
-          <li>
-            <a href="#Declaring_variables" class="nav-link">Declaring variables</a>
-          </li>
-        </ul>
       </header>
+      <ul>
+        <li>
+          <a href="#Introduce" class="nav-link">Introduce</a>
+        </li>
+        <li>
+          <a href="#What_you_should_already_know" class="nav-link">What you should already know</a>
+        </li>
+        <li>
+          <a href="#JavaScript_and_Java" class="nav-link">JavaScript and Java.</a>
+        </li>
+        <li>
+          <a href="#Hello_world" class="nav-link">Hello world</a>
+        </li>
+        <li>
+          <a href="#Variables" class="nav-link">Variables</a>
+        </li>
+        <li>
+          <a href="#Declaring_variables" class="nav-link">Declaring variables</a>
+        </li>
+      </ul>
     </nav>
     <main id="main-doc">
       <div class="main-section" id="Introduce">
@@ -91,19 +91,13 @@
         <div class="main-section-content">
           <p>You can declare a variable in three ways:</p>
           <p>With the keyword var. For example,</p>
-          <code>
-            var x = 42.
-          </code>
+          <code>var x = 42.</code>
           <p>This syntax can be used to declare both local and global variables.</p>
           <p>By simply assigning it a value. For example,</p>
-          <code>
-            x = 42.
-          </code>
+          <code>x = 42.</code>
           <p>This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.</p>
           <p>With the keyword let. For example,</p>
-          <code>
-            let y = 13.
-          </code>
+          <code>let y = 13.</code>
           <p>This syntax can be used to declare a block scope local variable. See Variable scope blow.</p>
         </div>
       </div>
@@ -232,5 +226,20 @@ li:hover {
   margin: 0px 50px 0px 50px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+@media screen and (max-width: 820px) {
+  .technical {
+    flex-direction: column;
+  }
+
+  #nav-doc {
+    width: 100%;
+    height: 200px;
+  }
+
+  #nav-doc ul {
+    overflow: scroll;
+  }
 }
 </style>
