@@ -132,15 +132,16 @@ body {
 header {
   background-color: #eeeeee;
   width: 100%;
-  height: 75px;
   position: sticky;
   top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .brand {
   height: 100%;
   width: 200px;
-  float: left;
   text-align: center;
   line-height: 75px;
   display: flex;
@@ -154,32 +155,23 @@ header {
   height: auto;
 }
 
-ul {
-  list-style: none;
-}
-
 nav {
   margin-right: 40px;
-  float: right;
   align-content: center;
   height: 100%;
 }
 
 nav ul {
-  margin: auto;
-  padding: auto;
-  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40vw;
 }
 
-.nav-link {
-  padding-right: 10px;
-  padding-left: 10px;
-  float: left;
-  text-align: center;
-  line-height: 75px;
-}
-
-.nav-link:hover {
+nav ul .nav-link:hover {
   cursor: pointer;
 }
 
@@ -307,6 +299,7 @@ iframe {
 
 footer {
   background: #ddd;
+  margin-top: 50px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -335,9 +328,34 @@ footer span {
   color: #5b5b5b;
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 720px) {
   header {
-    background: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    height: 15vh;
+  }
+
+  .nav-link {
+    float: none;
+  }
+
+  .feature-item .item-icon {
+    display: none;
+  }
+
+  #price-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #price-section .price-item {
+    width: 320px;
+    margin-top: 20px;
   }
 }
 </style>
