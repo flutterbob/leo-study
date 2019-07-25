@@ -154,6 +154,7 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  overflow: scroll;
 }
 
 #nav-doc ul li {
@@ -235,10 +236,10 @@ li:hover {
 
   #nav-doc {
     width: 100%;
-    height: 200px;
   }
 
   #nav-doc ul {
+    height: 250px;
     overflow: scroll;
   }
 }
