@@ -7,7 +7,8 @@
       <router-link to="/tribute">Tribute</router-link>|
       <router-link to="/survey">Survey</router-link>|
       <router-link to="/product">Product</router-link>|
-      <router-link to="/technical">Technical</router-link>
+      <router-link to="/technical">Technical</router-link>|
+      <router-link to="/portfolio">Portfolio</router-link>
     </div>
     <router-view />
   </div>

@@ -48,6 +48,12 @@ export default new Router({
       beforeEnter() {
         window.location = '/technical.html'
       }
+    },
+    {
+      path: '/portfolio',
+      beforeEnter() {
+        window.location = '/portfolio.html'
+      }
     }
     // {
     //   path: '/about',
