@@ -69,15 +69,27 @@ header {
   background: #bc3034;
   display: flex;
   position: sticky;
+  justify-content: flex-end;
 }
 
 header nav ul {
   display: flex;
   list-style-type: none;
   height: 100%;
+  margin-right: 20px;
+}
+
+header nav ul li {
+  height: 100%;
+  width: 100px;
 }
 
 header nav ul li a {
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   text-decoration: none;
   color: #eee;
 }
