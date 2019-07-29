@@ -72,6 +72,11 @@
               </a>
             </div>
           </div>
+          <div class="project-more">
+            <a href="#">
+              <p>Show all ></p>
+            </a>
+          </div>
         </section>
         <section id="contact"></section>
       </div>
@@ -88,6 +93,10 @@ export default {};
 * {
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 html,
@@ -160,6 +169,8 @@ header nav ul li a {
 
 #projects {
   padding-top: 50px;
+  padding-bottom: 150px;
+
   text-align: center;
   background: #45567d;
 }
@@ -212,5 +223,29 @@ header nav ul li a {
 .project-title a .capture p {
   color: #eee;
   font-size: 1.4em;
+}
+
+.project-more {
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-more p {
+  width: 150px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  text-decoration: none;
+  color: #eee;
+  font-size: 1.5em;
+  border-radius: 2px;
+}
+
+.project-more p:hover {
+  background-color: #bc3034;
+  animation-duration: 50000ms;
+  animation-delay: 50000ms;
 }
 </style>
