@@ -26,11 +26,48 @@
         <section id="projects">
           <h1>These are some of my projects</h1>
           <div class="project-grid">
+            <!-- 1 -->
             <div class="project-title">
               <a href="/tribute.html" target="_black">
-                <img src="@/assets/tribute.png" alt="Tribute img" />
+                <img src="@/assets/tribute.png" alt="tribute img" />
                 <div class="capture">
                   <p>Tribute Page</p>
+                </div>
+              </a>
+            </div>
+            <!-- 2 -->
+            <div class="project-title">
+              <a href="/survey.html" target="_black">
+                <img src="@/assets/survey.png" alt="survey img" />
+                <div class="capture">
+                  <p>Survey Page</p>
+                </div>
+              </a>
+            </div>
+            <!-- 3 -->
+            <div class="project-title">
+              <a href="/product.html" target="_black">
+                <img src="@/assets/product.png" alt="product img" />
+                <div class="capture">
+                  <p>Product Page</p>
+                </div>
+              </a>
+            </div>
+            <!-- 4 -->
+            <div class="project-title">
+              <a href="/technical.html" target="_black">
+                <img src="@/assets/technical.png" alt="technical img" />
+                <div class="capture">
+                  <p>Technical Page</p>
+                </div>
+              </a>
+            </div>
+            <!-- 5 -->
+            <div class="project-title">
+              <a href="/scssSt.html" target="_black">
+                <img src="@/assets/tribute.gif" alt="Tribute img" />
+                <div class="capture">
+                  <p>Scss Page</p>
                 </div>
               </a>
             </div>
@@ -135,7 +172,7 @@ header nav ul li a {
 }
 .project-grid {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 40px;
   /* grid-template-columns: 370px 370px 370px; */
   /* grid-template-columns: repeat(auto-fit, minmax(370px, 1fr)); */
   grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
@@ -156,7 +193,7 @@ header nav ul li a {
 }
 
 .project-title img {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   /* max-height: 100%; */
   /* height: auto; */
