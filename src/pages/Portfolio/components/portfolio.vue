@@ -78,7 +78,27 @@
             </a>
           </div>
         </section>
-        <section id="contact"></section>
+        <section id="contact">
+          <h1>Let's work together...</h1>
+          <em>How do you take your coffee?</em>
+          <ul>
+            <li>
+              <a href="#">Facebook</a>
+            </li>
+            <li>
+              <a href="#">GitHub</a>
+            </li>
+            <li>
+              <a href="#">Twitter</a>
+            </li>
+            <li>
+              <a href="#">Send a email</a>
+            </li>
+            <li>
+              <a href="#">Call me</a>
+            </li>
+          </ul>
+        </section>
       </div>
       <footer></footer>
     </main>
