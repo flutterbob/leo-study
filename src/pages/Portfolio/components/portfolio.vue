@@ -83,19 +83,29 @@
           <em>How do you take your coffee?</em>
           <ul>
             <li>
-              <a href="#">Facebook</a>
+              <a href="#">
+                <i class="fab fa-facebook-square"></i>Facebook
+              </a>
             </li>
             <li>
-              <a href="#">GitHub</a>
+              <a href="#">
+                <i class="fab fa-github-alt"></i>GitHub
+              </a>
             </li>
             <li>
-              <a href="#">Twitter</a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>Twitter
+              </a>
             </li>
             <li>
-              <a href="#">Send a email</a>
+              <a href="#">
+                <i class="fas fa-envelope"></i>Send a email
+              </a>
             </li>
             <li>
-              <a href="#">Call me</a>
+              <a href="#">
+                <i class="fab fa-weixin"></i>WeChat
+              </a>
             </li>
           </ul>
         </section>
@@ -189,8 +199,6 @@ header nav ul li a {
 
 #projects {
   padding-top: 50px;
-  padding-bottom: 150px;
-
   text-align: center;
   background: #45567d;
 }
@@ -267,5 +275,44 @@ header nav ul li a {
   background-color: #bc3034;
   animation-duration: 50000ms;
   animation-delay: 50000ms;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #303841;
+}
+
+#contact h1 {
+  text-align: center;
+  color: #eee;
+  font-size: 3em;
+}
+
+#contact em {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  color: #999;
+}
+
+#contact ul {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: auto;
+  padding-right: auto;
+  list-style-type: none;
+  justify-content: space-around;
+  width: 60vw;
+  align-self: center;
+}
+
+#contact ul li a {
+  color: #eee;
+  font-size: 1.8em;
 }
 </style>
