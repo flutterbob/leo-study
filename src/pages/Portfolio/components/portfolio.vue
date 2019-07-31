@@ -84,27 +84,27 @@
           <ul>
             <li>
               <a href="#">
-                <i class="fab fa-facebook-square"></i>Facebook
+                <i class="fab fa-facebook-square"></i> Facebook
               </a>
             </li>
             <li>
               <a href="#">
-                <i class="fab fa-github-alt"></i>GitHub
+                <i class="fab fa-github-alt"></i> GitHub
               </a>
             </li>
             <li>
               <a href="#">
-                <i class="fab fa-twitter"></i>Twitter
+                <i class="fab fa-twitter"></i> Twitter
               </a>
             </li>
             <li>
               <a href="#">
-                <i class="fas fa-envelope"></i>Send a email
+                <i class="fas fa-envelope"></i> Send a email
               </a>
             </li>
             <li>
               <a href="#">
-                <i class="fab fa-weixin"></i>WeChat
+                <i class="fab fa-weixin"></i> WeChat
               </a>
             </li>
           </ul>
@@ -116,7 +116,17 @@
 </template>
 
 <script>
-export default {};
+import "../../../../public/fontawesome-free-5.10.0-web/css/all.css";
+export default {
+  data() {
+    return {
+      ins: "a"
+    };
+  },
+  created() {
+    console.log(process.env.VUE_APP_SECRET);
+  }
+};
 </script>
 
 <style>
@@ -309,10 +319,14 @@ header nav ul li a {
   justify-content: space-around;
   width: 60vw;
   align-self: center;
+  flex-wrap: wrap;
 }
 
 #contact ul li a {
+  display: inline-block;
   color: #eee;
   font-size: 1.8em;
+  padding: 10px;
+  overflow: hidden;
 }
 </style>
