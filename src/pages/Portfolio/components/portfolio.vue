@@ -110,13 +110,16 @@
           </ul>
         </section>
       </div>
-      <footer></footer>
+      <footer>
+        <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+        <p>&copy Created for LeoStudy</p>
+      </footer>
     </main>
   </div>
 </template>
 
 <script>
-import "../../../../public/fontawesome-free-5.10.0-web/css/all.css";
+import "../../../assets/fontawesome-free-5.10.0-web/css/all.min.css";
 export default {
   data() {
     return {
@@ -194,6 +197,9 @@ header nav ul li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 #welcome-section h1 {
@@ -211,6 +217,9 @@ header nav ul li a {
   padding-top: 50px;
   text-align: center;
   background: #45567d;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 #projects h1 {
@@ -228,9 +237,6 @@ header nav ul li a {
   grid-template-rows: repeat(2, 440px);
   padding-left: 20px;
   padding-right: 20px;
-}
-.project-title {
-  background: greenyellow;
 }
 
 .project-title a {
@@ -290,9 +296,14 @@ header nav ul li a {
 #contact {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding-top: 50px;
   padding-bottom: 50px;
   background: #303841;
+  height: 70vh;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 #contact h1 {
@@ -328,5 +339,24 @@ header nav ul li a {
   font-size: 1.8em;
   padding: 10px;
   overflow: hidden;
+}
+
+footer {
+  height: 18vh;
+  border-top: 0.4em solid #bc3034;
+  background: #303841;
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+footer p {
+  color: #eee;
+  font-size: 1.5em;
+  margin: auto;
+  padding: auto;
 }
 </style>
