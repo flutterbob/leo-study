@@ -88,7 +88,7 @@
             </div>
             <!-- 6 -->
             <div class="project-title">
-              <a href="/portfolio.html" target="_black">
+              <a href="#">
                 <img src="@/assets/portfolio.png" alt="Portfolio img" />
                 <div class="capture">
                   <p>
@@ -128,7 +128,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="Mailto:yzhenghbds@qq.com">
                 <i class="fas fa-envelope"></i> Send a email
               </a>
             </li>
@@ -269,10 +269,9 @@ header nav ul li a:hover {
 .project-grid {
   display: grid;
   grid-gap: 40px;
-  /* grid-template-columns: 370px 370px 370px; */
-  /* grid-template-columns: repeat(auto-fit, minmax(370px, 1fr)); */
   grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
-  grid-template-rows: repeat(2, 440px);
+  grid-template-rows: 440px;
+  grid-auto-rows: 440px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -417,7 +416,13 @@ footer {
 footer p {
   color: #eee;
   font-size: 1.5em;
-  margin: auto;
-  padding: auto;
+  padding: 5px;
+}
+
+@media screen and (max-width: 720px) {
+  footer {
+    height: auto;
+    flex-direction: column;
+  }
 }
 </style>
