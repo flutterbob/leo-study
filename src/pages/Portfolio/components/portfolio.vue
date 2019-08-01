@@ -86,10 +86,25 @@
                 </div>
               </a>
             </div>
+            <!-- 6 -->
+            <div class="project-title">
+              <a href="/portfolio.html" target="_black">
+                <img src="@/assets/portfolio.png" alt="Portfolio img" />
+                <div class="capture">
+                  <p>
+                    <span><</span> Portfolio Page
+                    <span>/></span>
+                  </p>
+                </div>
+              </a>
+            </div>
           </div>
           <div class="project-more">
             <a href="#">
-              <p>Show all ></p>
+              <p>
+                Show all
+                <i class="fas fa-chevron-right"></i>
+              </p>
             </a>
           </div>
         </section>
@@ -294,12 +309,11 @@ header nav ul li a:hover {
 
 .project-title a .capture p span {
   color: transparent;
+  transition: color 500ms ease;
 }
 
 .project-title a:hover .capture p span {
-  animation-name: span-color;
-  animation-duration: 800ms;
-  animation-fill-mode: forwards;
+  color: #ff7f50;
 }
 
 .project-more {
@@ -319,12 +333,19 @@ header nav ul li a:hover {
   font-size: 1.5em;
   border-radius: 2px;
   background-color: #303841;
+  transition: background-color 500ms ease;
+}
+
+.project-more p i {
+  transition: transform 500ms ease;
 }
 
 .project-more p:hover {
-  animation-name: showall;
-  animation-duration: 500ms;
-  animation-fill-mode: forwards;
+  background-color: #bc3034;
+}
+
+.project-more p:hover i {
+  transform: translateX(4px);
 }
 
 #contact {
@@ -373,12 +394,11 @@ header nav ul li a:hover {
   font-size: 1.8em;
   padding: 10px;
   overflow: hidden;
+  transition: transform 300ms ease;
 }
 
 #contact ul li a:hover {
-  animation-name: contactmedown;
-  animation-duration: 300ms;
-  animation-fill-mode: forwards;
+  transform: translateY(6px);
 }
 
 footer {
@@ -399,23 +419,5 @@ footer p {
   font-size: 1.5em;
   margin: auto;
   padding: auto;
-}
-
-@keyframes showall {
-  100% {
-    background-color: #bc3034;
-  }
-}
-
-@keyframes contactmedown {
-  100% {
-    transform: translateY(8px);
-  }
-}
-
-@keyframes span-color {
-  100% {
-    color: #ff7f50;
-  }
 }
 </style>
