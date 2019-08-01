@@ -145,6 +145,7 @@ a {
 html,
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
 }
 
 #app,
@@ -184,6 +185,10 @@ header nav ul li a {
   height: 100%;
   text-decoration: none;
   color: #eee;
+}
+
+header nav ul li a:hover {
+  background: #45567d;
 }
 
 .content {
