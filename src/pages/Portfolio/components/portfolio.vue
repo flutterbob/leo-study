@@ -31,7 +31,10 @@
               <a href="/tribute.html" target="_black">
                 <img src="@/assets/tribute.png" alt="tribute img" />
                 <div class="capture">
-                  <p>Tribute Page</p>
+                  <p>
+                    <span><</span> Tribute Page
+                    <span>/></span>
+                  </p>
                 </div>
               </a>
             </div>
@@ -40,7 +43,10 @@
               <a href="/survey.html" target="_black">
                 <img src="@/assets/survey.png" alt="survey img" />
                 <div class="capture">
-                  <p>Survey Page</p>
+                  <p>
+                    <span><</span> Survey Page
+                    <span>/></span>
+                  </p>
                 </div>
               </a>
             </div>
@@ -49,7 +55,10 @@
               <a href="/product.html" target="_black">
                 <img src="@/assets/product.png" alt="product img" />
                 <div class="capture">
-                  <p>Product Page</p>
+                  <p>
+                    <span><</span> Product Page
+                    <span>/></span>
+                  </p>
                 </div>
               </a>
             </div>
@@ -58,7 +67,10 @@
               <a href="/technical.html" target="_black">
                 <img src="@/assets/technical.png" alt="technical img" />
                 <div class="capture">
-                  <p>Technical Page</p>
+                  <p>
+                    <span><</span> Technical Page
+                    <span>/></span>
+                  </p>
                 </div>
               </a>
             </div>
@@ -67,7 +79,10 @@
               <a href="/scssSt.html" target="_black">
                 <img src="@/assets/tribute.gif" alt="Tribute img" />
                 <div class="capture">
-                  <p>Scss Page</p>
+                  <p>
+                    <span><</span> Scss Page
+                    <span>/></span>
+                  </p>
                 </div>
               </a>
             </div>
@@ -277,6 +292,16 @@ header nav ul li a:hover {
   font-size: 1.4em;
 }
 
+.project-title a .capture p span {
+  color: transparent;
+}
+
+.project-title a:hover .capture p span {
+  animation-name: span-color;
+  animation-duration: 800ms;
+  animation-fill-mode: forwards;
+}
+
 .project-more {
   height: 180px;
   display: flex;
@@ -385,6 +410,12 @@ footer p {
 @keyframes contactmedown {
   100% {
     transform: translateY(8px);
+  }
+}
+
+@keyframes span-color {
+  100% {
+    color: #ff7f50;
   }
 }
 </style>
