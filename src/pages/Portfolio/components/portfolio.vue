@@ -83,17 +83,17 @@
           <em>How do you take your coffee?</em>
           <ul>
             <li>
-              <a href="#">
+              <a href="https://www.facebook.com/haibudongshi?ref=bookmarks" target="_blank">
                 <i class="fab fa-facebook-square"></i> Facebook
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://github.com/flutterbob" target="_blank">
                 <i class="fab fa-github-alt"></i> GitHub
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://twitter.com/flutter_bob" target="_blank">
                 <i class="fab fa-twitter"></i> Twitter
               </a>
             </li>
@@ -112,7 +112,7 @@
       </div>
       <footer>
         <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
-        <p>&copy Created for LeoStudy</p>
+        <p>&copy Created by Leo</p>
       </footer>
     </main>
   </div>
@@ -156,10 +156,10 @@ main {
 
 header {
   width: 100%;
-  height: 12vh;
+  height: 70px;
   background: #bc3034;
   display: flex;
-  position: sticky;
+  position: fixed;
   top: 0px;
   justify-content: flex-end;
 }
@@ -192,7 +192,7 @@ header nav ul li a {
 
 #welcome-section {
   background: #202023;
-  height: 88vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -214,7 +214,7 @@ header nav ul li a {
 }
 
 #projects {
-  padding-top: 50px;
+  padding-top: 70px;
   text-align: center;
   background: #45567d;
   box-sizing: border-box;
@@ -225,8 +225,11 @@ header nav ul li a {
 #projects h1 {
   color: #eee;
   font-size: 2em;
-  padding-bottom: 80px;
   text-decoration: underline;
+  margin: auto;
+  height: 10vh;
+  line-height: 10vh;
+  padding: 20px;
 }
 .project-grid {
   display: grid;
@@ -285,22 +288,23 @@ header nav ul li a {
   color: #eee;
   font-size: 1.5em;
   border-radius: 2px;
+  background-color: #303841;
 }
 
 .project-more p:hover {
-  background-color: #bc3034;
-  animation-duration: 50000ms;
-  animation-delay: 50000ms;
+  animation-name: showall;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
 }
 
 #contact {
+  height: calc(100vh - 170px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: 50px;
   padding-bottom: 50px;
   background: #303841;
-  height: 70vh;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -341,12 +345,19 @@ header nav ul li a {
   overflow: hidden;
 }
 
+#contact ul li a:hover {
+  animation-name: contactmedown;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+}
+
 footer {
-  height: 18vh;
+  height: 100px;
   border-top: 0.4em solid #bc3034;
   background: #303841;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 2em;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -358,5 +369,17 @@ footer p {
   font-size: 1.5em;
   margin: auto;
   padding: auto;
+}
+
+@keyframes showall {
+  100% {
+    background-color: #bc3034;
+  }
+}
+
+@keyframes contactmedown {
+  100% {
+    transform: translateY(8px);
+  }
 }
 </style>
